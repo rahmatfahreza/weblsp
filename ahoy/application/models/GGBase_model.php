@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class GGBase_model extends CI_model
 {
-	private $table = 'gudangotomotif';
+	private $table = 'gudangotomotif2';
 
 	public function rules()
 	{

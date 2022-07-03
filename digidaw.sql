@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2022 at 07:40 PM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.10
+-- Waktu pembuatan: 03 Jul 2022 pada 17.59
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gudangotomotif`
+-- Struktur dari tabel `gudangotomotif`
 --
 
 CREATE TABLE `gudangotomotif` (
@@ -37,28 +36,55 @@ CREATE TABLE `gudangotomotif` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `gudangotomotif`
+-- Dumping data untuk tabel `gudangotomotif`
 --
 
 INSERT INTO `gudangotomotif` (`id_produk`, `nama_barang`, `brand`, `harga_barang`, `stok_barang`) VALUES
 (16, 'reja', 'RCB', 2147483647, 342374);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `gudangotomotif2`
+--
+
+CREATE TABLE `gudangotomotif2` (
+  `id_produk` int(11) NOT NULL,
+  `nama_barang` varchar(20) NOT NULL,
+  `brand` varchar(20) NOT NULL,
+  `harga_barang` int(5) NOT NULL,
+  `stok_barang` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `gudangotomotif2`
+--
+
+INSERT INTO `gudangotomotif2` (`id_produk`, `nama_barang`, `brand`, `harga_barang`, `stok_barang`) VALUES
+(1, 'Knalpot', 'WRC', 700000, 500);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `gudangotomotif`
+-- Indeks untuk tabel `gudangotomotif`
 --
 ALTER TABLE `gudangotomotif`
   ADD PRIMARY KEY (`id_produk`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indeks untuk tabel `gudangotomotif2`
+--
+ALTER TABLE `gudangotomotif2`
+  ADD PRIMARY KEY (`id_produk`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `gudangotomotif`
+-- AUTO_INCREMENT untuk tabel `gudangotomotif`
 --
 ALTER TABLE `gudangotomotif`
   MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;

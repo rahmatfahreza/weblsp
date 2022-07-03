@@ -1,4 +1,4 @@
-<div class="container pt-5">
+ <div class="container pt-5">
     <?php
     //print_r($data_GGBase->nama_barang); 
     ?>
